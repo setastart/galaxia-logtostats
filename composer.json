@@ -1,0 +1,19 @@
+{
+    "name": "setastart/galaxia-logtostats",
+    "type": "library",
+    "description": "Web server log parsing and formatting for website visitor statistics, compatible with GDPR.",
+    "keywords": ["statistics", "stats", "gdpr", "privacy", "log", "parser", "apache", "nginx"],
+    "homepage": "https://setastart.com/",
+
+    "require": {
+        "php": ">=7.1.0",
+        "whichbrowser/parser": "^2.0",
+        "geoip/geoip": "~1.16"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Galaxia\\": "src"
+        }
+    }
+}
