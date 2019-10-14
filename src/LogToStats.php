@@ -20,7 +20,7 @@ namespace Galaxia;
 class LogToStats {
 
     public $dirLog   = 'var/logs/';
-    public $dirStats = 'var/stats/';
+    public $dirStats = 'var/stat/';
     public $dirCache = 'var/cache/';
     public $filePathGeoIpDB = 'GeoIP.dat';
 
@@ -234,8 +234,8 @@ class LogToStats {
             $url = strtok($m['url'], '?');
             $uType = 'other';
             if (substr($url, 0, 7) == '/media/') {
-                if (substr($url, 0, 14) == '/media/images/') {
-                    $uType = 'images';
+                if (substr($url, 0, 14) == '/media/image/') {
+                    $uType = 'image';
                     $url = substr(strrchr($url, '/'), 1);
                 } else {
                     $uType = 'media';
